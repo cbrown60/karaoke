@@ -1,5 +1,5 @@
 class Room
-attr_accessor   
+attr_accessor   :capacity 
   def initialize (number, capacity, booking_name, music)
 
   @number = number
@@ -17,5 +17,13 @@ attr_accessor
   @music << song
   end
  
+  def is_there_room (guests, capacity)
+    if guests[:group_size] < capacity[:capacity]
+      return "sorry, too many guests"
+    else
+      return "this room has enough space for you"  
+
+    end
+  end
 
 end

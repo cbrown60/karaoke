@@ -1,11 +1,11 @@
 require_relative("./guest.rb")
 class Reception
+attr_accessor :door_fee
 
-def initialize (guest1, guest2)
-@guest1 = guest1
-@guest2 = guest2
+  def initialize (door_fee)
+    @door_fee = door_fee 
 
-end
+  end
 
 
 
